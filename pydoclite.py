@@ -1,12 +1,5 @@
 import readline
 
-def ascii_intro():
-    chars = ['@', '#', 'S', '%', '?', '*', '+', ';', ':', ',', '.']
-    with open("pydoclite.py", "r") as f:
-        content = f.read()
-        print(type(content))
-        print(content)
-
 
 #keyword documentation class
 class kwDoc:
@@ -42,7 +35,6 @@ readline.parse_and_bind("tab: complete")
 
 #this is the main funcion (duh)
 def main():
-    ascii_intro()
     print("type 'quit' to exit, press tab for auto completion")
     while True:
         text = input("Enter a keyword, class or a function name: ").strip()
